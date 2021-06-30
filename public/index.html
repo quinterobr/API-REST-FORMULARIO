@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Administrador de Pacientes</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <h2 class="text-center my-5 titulo">Formulario</h2>
+    <div class="container mt-5 p-5">
+        <div id="contenido" class="row">
+            <div class="col-md-6 agregar-cita">
+                <form id="nueva-cita">
+                    <legend class="mb-4">Datos</legend>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-lg-4 col-form-label">Nombre :</label>
+                        <div class="col-sm-8 col-lg-8">
+                            <input type="text" id="nombre" name="nombre" class="form-control" placeholder="nombre">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-lg-4 col-form-label">Apellido:</label>
+                        <div class="col-sm-8 col-lg-8">
+                            <input type="text" id="apellido" name="apellido" class="form-control" placeholder="Apellido">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-lg-4 col-form-label">Tipo de documento:</label>
+                        <div class="col-sm-8 col-lg-8">
+                            <select id="tipoDocumento" name="tipoDocumento">
+                                <option value="">Seleccionar</option>
+                                <option value="cedula">Cedula</option>
+                                <option value="tarjeta">Tarjeta de identidad</option>
+                                <option value="pasaporte">Pasaporte</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-lg-4 col-form-label">documento:</label>
+                        <div class="col-sm-8 col-lg-8">
+                            <input type="tel" id="documento" name="documento" class="form-control" placeholder="Número de documento">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-lg-4 col-form-label">correo:</label>
+                        <div class="col-sm-8 col-lg-8">
+                            <input type="email" id="correo" name="correo" class="form-control" placeholder="Correo Electronico">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-lg-4 col-form-label">Teléfono:</label>
+                        <div class="col-sm-8 col-lg-8">
+                            <input type="tel" id="telefono" name="telefono" class="form-control" placeholder="Número de Teléfono">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-lg-4 col-form-label">Fecha de Nacimiento:</label>
+                        <div class="col-sm-8 col-lg-8">
+                            <input type="date" id="fecha" name="fecha" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-success w-100 d-block">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!--.row-->
+    </div>
+    <!--.container-->
+
+    <script src="../js/index.js"></script>
+
+</body>
+
+</html>
